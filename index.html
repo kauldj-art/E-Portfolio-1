@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/21da121648.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    
+</head>
+<body>
+    <section id="landing-page">
+        <nav>
+        <figure>
+           <img id="personal-logo" src="https://cdn.creativefabrica.com/2021/10/08/DK-logo-design-vector-Graphics-18503066-1-1-580x386.jpg" alt="Logo">
+        </figure>
+        <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a href="#" class="nav__link--anchor
+                    link__hover--effect
+                    link__hover--effect--black
+                    ">About</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover--effect
+                    link__hover--effect--black
+                    ">Projects</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover--effect
+                    link__hover--effect--black
+                    ">Contact</a>
+                </li>
+                <li class="nav__link click">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover--effect
+                    link__hover--effect--black
+                    "><i class="fa-solid fa-circle-half-stroke"></i></a>
+                </li>
+        </ul>
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hey</h1>
+                <h1 class="title green">I'm Dan</h1>
+                <p class="header__para">I'm a <b class="green">Frontend Software Engineer</b> with a strong passion for building web applications with great user experiences.
+                    <br>
+                    Here's a bit more <b class="green">about me</b>.
+                </p>
+                <div class="social__list">
+                    <a href="https://www.linkedin.com/in/dan-kaul-140164234/" target="_blank" class="social__link click">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/kauldj-art" target="_blank" class="social__link click">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="Kaul Dan FINAL 12.19.2025 (1).pdf" target="_blank" class="social__link click">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <button class="mail__btn click">
+            <i class="fa-regular fa-envelope"></i>
+        </button>
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a>
+    <div class="modal">
+        <div class="modal__half modal__about">
+            <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+            <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+            <p class="modal__para">I'm a <b class="green">frontend software engineer</b> with a passion for building web applications with great <b class="green">user experiences</b>. 
+                <br>
+                I have experience working with <b class="green">HTML, CSS, JavaScript, and React</b>, and I'm always eager to learn new technologies and improve my skills.
+            </p>
+        <div class="modal__languages">
+            <figure class="modal__language">
+                <img class="modal__language--img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt36Arw3AU03ffGtiqqbfCeJ-A_MgydhX1kQ&s">
+                <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+                <img class="modal__language--img" src="https://icon2.cleanpng.com/20180429/ukw/kisspng-cascading-style-sheets-html-web-page-5ae55eb45423e6.4422717315249814283446.jpg">
+                <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+                <img class="modal__language--img" src="https://icon2.cleanpng.com/20180810/ekz/11448a7a96ee808a3cdbaf0df9570976.webp">
+                <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+                <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png">
+                <span class="language__name">React</span>
+            </figure>
+        </div>
+        </div>
+        <div class="modal__half modal__contact">
+            <h3 class="modal__title modal__title--contact">
+                Let's have a chat!
+            </h3>
+            <h3 class="modal__sub-title modal__subtitle--contact">
+                I'm currently open to new opportunities, so if you have any questions or just want to connect, feel free to reach out!
+            </h3>
+            <form id="contact__form" action="">
+                <div class="form__item">
+                    <label class="form__item--label">Name</label>
+                    <input class="input" name="user_name" type="text" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">E-mail</label>
+                    <input class="input" name="user_email" type="email" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Message</label>
+                    <textarea class="input" name="message" type="text" required></textarea>
+                </div>
+                <button id="contact__submit" class="form__submit">
+                    Send Message
+                </button>
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+                <i class="fas fa-spinner"></i>
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+                Thanks for reaching out! I'll get back to you as soon as I can.
+            </div>
+        </div>
+        <i class="fas fa-times modal__exit click"></i>
+    </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">Here are some of my <span class="green">projects</span></h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="blinker mockup.png" class="project__img" alt="Blinker Mockup">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                               <h3 class="project__description--title">
+                                Car Sales Project
+                               </h3>
+                               <h4 class="project__description--sub-title">
+                                HTML, CSS, JavaScript, React
+                               </h4>
+                               <p class="project__description--para">
+                                A car sales website built with React, featuring a responsive design and interactive elements to enhance user experience. The project showcases my skills in front-end development and my ability to create visually appealing and functional web applications.
+                               </p>
+                               <div class="project__description--links">
+                                <a href="#" class="project__description--link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#" class="project__description--link">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                               </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="blinker mockup.png" class="project__img" alt="Blinker Mockup">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                               <h3 class="project__description--title">
+                                E-Commerce Project
+                               </h3>
+                               <h4 class="project__description--sub-title">
+                                HTML, CSS, JavaScript, React
+                               </h4>
+                               <p class="project__description--para">
+                                A car sales website built with React, featuring a responsive design and interactive elements to enhance user experience. The project showcases my skills in front-end development and my ability to create visually appealing and functional web applications.
+                               </p>
+                               <div class="project__description--links">
+                                <a href="https://github.com/kauldj-art/e-Commerce-Project" class="project__description--link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://kauldj-art.github.io/e-Commerce-Project/" class="project__description--link">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                               </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+            <figure>
+                <img class="footer__logo--img" src="https://cdn.creativefabrica.com/2021/10/08/DK-logo-design-vector-Graphics-18503066-1-1-580x386.jpg" alt="logo">
+            </figure>
+            <div class="footer__social--list">
+                <a href="https://github.com/kauldj-art" target="_blank" class="
+                footer__social--link
+                link__hover--effect
+                link__hover--effect--white
+                ">
+                Github
+                </a>
+                <a href="#" class="
+                footer__social--link
+                link__hover--effect
+                link__hover--effect--white
+                ">
+                Linkedin
+                </a>
+                <a href="#" class="
+                footer__social--link
+                link__hover--effect
+                link__hover--effect--white
+                ">
+                Contact
+                </a>
+                <a href="#" class="
+                footer__social--link
+                link__hover--effect
+                link__hover--effect--white
+                ">
+                Resume
+                </a>
+            </div>
+            <div class="footer__copyright">Made by Dan Kaul</div>
+        </div>
+        </div>
+    </footer>   
+</body>
+</html>
