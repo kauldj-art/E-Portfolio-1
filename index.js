@@ -4,14 +4,23 @@
 
 function contact(event) {
     event.preventDefault();
+    const loading = document.querySelector('.modal__overlay--loading');
+    const success = document.querySelector('.modal__overlay--success');
+    loading.classList += " modal__overlay--visible";
     emailjs
-    .sendform(
-        'service_q1gds29',
-        'template_krwzw4r',
-        event.target,
-        'lg6wF3BoLS9tWWvuH'
+        .sendForm(
+            'service_q1gds29',
+            'template_krwzw4r',
+            event.target,
+            'lg6wF3BoLS9tWWvuH'
     )
     .then(() => {
-        console.log('Email sent successfully!');
-    });
+        loading.classList.remove("modal__overlay--visible");
+        success.classList += " modal__overlay--visible";
+    }).catch(() => {
+        loading.classList.remove("modal__overlay--visible");
+        alert("The email service is temporarily unavailable. Please contact me directly at kauldj@gmail.com"
+        );
+    })
 }
+
