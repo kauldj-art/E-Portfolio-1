@@ -36,7 +36,7 @@
                     link__hover--effect--black
                     ">Projects</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor
                     link__hover--effect
@@ -58,7 +58,7 @@
                 <h1 class="title green">I'm Dan</h1>
                 <p class="header__para">I'm a <b class="green">Frontend Software Engineer</b> with a strong passion for building web applications with great user experiences.
                     <br>
-                    Here's a bit more <b class="green">about me</b>.
+                    Here's a bit more <b class="green click" onclick="toggleModal()">about me</b>.
                 </p>
                 <div class="social__list">
                     <a href="https://www.linkedin.com/in/dan-kaul-140164234/" target="_blank" class="social__link click">
@@ -73,7 +73,7 @@
                 </div>
             </div>
         </header>
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
             <i class="fa-regular fa-envelope"></i>
         </button>
         <a href="#projects" class="scroll">
@@ -107,6 +107,7 @@
         </div>
         </div>
         <div class="modal__half modal__contact">
+            <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
             <h3 class="modal__title modal__title--contact">
                 Let's have a chat!
             </h3>
@@ -137,7 +138,6 @@
                 Thanks for reaching out! I'll get back to you as soon as I can.
             </div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
     </div>
     </section>
     <section id="projects">
