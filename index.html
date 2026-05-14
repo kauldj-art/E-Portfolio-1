@@ -17,7 +17,7 @@
 </script>    
 </head>
 <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
         <figure>
            <img id="personal-logo" src="https://cdn.creativefabrica.com/2021/10/08/DK-logo-design-vector-Graphics-18503066-1-1-580x386.jpg" alt="Logo">
@@ -29,8 +29,8 @@
                     link__hover--effect--black
                     ">About</a>
                 </li>
-                <li class="nav__link">
-                    <a href="#" class="
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#projects" class="
                     nav__link--anchor
                     link__hover--effect
                     link__hover--effect--black
@@ -74,8 +74,10 @@
                 </div>
             </div>
         </header>
+        <a href="#"></a>
         <button class="mail__btn click" onclick="toggleModal()">
             <i class="fa-regular fa-envelope"></i>
+        </a>
         </button>
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
@@ -223,21 +225,21 @@
                 ">
                 Github
                 </a>
-                <a href="#" class="
+                <a href="https://www.linkedin.com/in/dan-kaul-140164234" target="_blank" class="
                 footer__social--link
                 link__hover--effect
                 link__hover--effect--white
                 ">
                 Linkedin
                 </a>
-                <a href="#" class="
+                <a href="#" onclick="toggleModal()" class="
                 footer__social--link
                 link__hover--effect
                 link__hover--effect--white
                 ">
                 Contact
                 </a>
-                <a href="#" class="
+                <a href="Kaul Dan FINAL 12.19.2025 (1).pdf" target="_blank" class="
                 footer__social--link
                 link__hover--effect
                 link__hover--effect--white
